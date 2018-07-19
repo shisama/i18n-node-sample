@@ -10,11 +10,12 @@ const apiRouter = require('./routes/api');
 
 var app = express();
 
-const i18n = require('i18n');
+const i18n = require('i18n-yaml');
 
 i18n.configure({
   locales: ['en', 'ja'],
-  directory: __dirname + '/locales'
+  directory: __dirname + '/locales',
+  extension: '.yml'
 })
 
 // view engine setup

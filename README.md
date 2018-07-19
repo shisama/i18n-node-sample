@@ -1,7 +1,7 @@
 i18n-node-sample
 ===
 
-Using express.js
+YAML version.
 
 ## Usage
 
@@ -40,26 +40,20 @@ curl http://localhost:3000/api -H 'Accept-Language: en,ja'
 ## Implementation
 
 ### message file
-see `locales/en.json` and `locales/ja.json`
+see `locales/en.yml` and `locales/ja.yml`
 
-```json
-{
-	"hello": "Hello %s",
-	"error": {
-		"404": "Not Found",
-		"500": "Internal Server Error"
-	}
-}
+```yaml
+hello: Hello %s
+error:
+  404: Not Found
+  500: Internal Server Error
 ```
 
-```json
-{
-    "hello": "こんにちは %s",
-    "error": {
-        "404": "見つかりません",
-        "500": "サーバでエラーが発生しました"
-    }
-}
+```yaml
+hello: こんにちは %s
+error:
+  404: 見つかりません
+  500: サーバでエラーが発生しました
 ```
 
 ### i18n configure
