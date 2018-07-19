@@ -3,7 +3,7 @@ i18n-node-sample
 
 Using express.js
 
-# Usage
+## Usage
 
 ```
 npm install
@@ -37,7 +37,7 @@ curl http://localhost:3000/api -H 'Accept-Language: en,ja'
 // {"code":404,"message":"Not Found"}
 ```
 
-# Implementation
+## Implementation
 
 ### message file
 see `locales/en.json` and `locales/ja.json`
